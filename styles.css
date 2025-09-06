@@ -217,14 +217,14 @@ section {
     -ms-flex-pack: center;
     justify-content: center;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 0 auto -30px auto;
 }
 
 .accommodation-grid .accommodation-card {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 calc(50% - 30px);
-    flex: 0 0 calc(50% - 30px);
-    min-width: 350px;
+    -ms-flex: 0 0 calc(50% - 60px);
+    flex: 0 0 calc(50% - 60px);
+    min-width: 300px;
     margin: 0 15px 30px 15px;
 }
 
@@ -429,14 +429,14 @@ section {
     -ms-flex-pack: center;
     justify-content: center;
     max-width: 1000px;
-    margin: 40px auto 0;
+    margin: 40px auto -30px auto;
 }
 
 .contact-grid .contact-card {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 calc(50% - 30px);
-    flex: 0 0 calc(50% - 30px);
-    min-width: 350px;
+    -ms-flex: 0 0 calc(50% - 60px);
+    flex: 0 0 calc(50% - 60px);
+    min-width: 300px;
     margin: 0 15px 30px 15px;
 }
 
@@ -520,19 +520,19 @@ footer p {
         font-size: 2rem;
     }
 
-    .details-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
+    .details-grid .detail-card {
+        flex: 0 0 100%;
+        min-width: auto;
     }
 
-    .accommodation-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
+    .accommodation-grid .accommodation-card {
+        flex: 0 0 100%;
+        min-width: auto;
     }
 
-    .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
+    .contact-grid .contact-card {
+        flex: 0 0 100%;
+        min-width: auto;
     }
 
     section {
