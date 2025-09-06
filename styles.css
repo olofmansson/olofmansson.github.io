@@ -28,6 +28,7 @@ nav {
     top: 0;
     width: 100%;
     background: rgba(255, 255, 255, 0.95);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     z-index: 1000;
     padding: 15px 0;
@@ -142,11 +143,28 @@ section {
 }
 
 .details-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     gap: 60px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     max-width: 900px;
     margin: 0 auto;
+}
+
+.details-grid .detail-card {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 calc(100% - 60px);
+    flex: 0 0 calc(100% - 60px);
+    min-width: 350px;
 }
 
 .detail-card {
@@ -185,11 +203,29 @@ section {
 }
 
 .accommodation-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     gap: 60px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     max-width: 1000px;
     margin: 0 auto;
+}
+
+.accommodation-grid .accommodation-card {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 calc(50% - 30px);
+    flex: 0 0 calc(50% - 30px);
+    min-width: 350px;
+    margin: 0 15px 30px 15px;
 }
 
 .accommodation-card {
@@ -379,11 +415,29 @@ section {
 }
 
 .contact-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     gap: 60px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     max-width: 1000px;
     margin: 40px auto 0;
+}
+
+.contact-grid .contact-card {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 calc(50% - 30px);
+    flex: 0 0 calc(50% - 30px);
+    min-width: 350px;
+    margin: 0 15px 30px 15px;
 }
 
 .contact-card {
