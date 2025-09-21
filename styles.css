@@ -127,75 +127,68 @@ section {
 .story-content {
     max-width: 800px;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
+    background: #F8F9FA;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(107, 142, 90, 0.05);
 }
 
 .story-content p {
     font-size: 1.1rem;
     line-height: 1.8;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     color: #555;
 }
 
-/* Wedding Details */
-.details {
-    background: white;
-}
-
-.details-grid {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    gap: 60px;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.details-grid .detail-card {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 calc(100% - 60px);
-    flex: 0 0 calc(100% - 60px);
-    min-width: 350px;
-}
-
-.detail-card {
-    text-align: center;
-    padding: 40px 30px;
-    border: 1px solid #E5E7EB;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.detail-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(107, 142, 90, 0.1);
-}
-
-.detail-card h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.8rem;
+.story-content p strong {
     color: #6B8E5A;
-    margin-bottom: 20px;
+    font-weight: 600;
+    display: inline-block;
+    margin-right: 8px;
 }
 
-.detail-card p {
+.story-content p i {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid #E5E7EB;
+    font-style: italic;
+    color: #6B8E5A;
+}
+
+.story-content .address-section {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    padding: 25px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.story-content .address-section h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: #6B8E5A;
     margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.story-content .address-section p {
+    margin-bottom: 10px;
     color: #666;
 }
 
-.detail-card .time {
-    font-weight: 500;
-    color: #333;
+.story-content .address-section a {
+    color: #6B8E5A;
+    text-decoration: none;
 }
+
+.story-content .address-section a:hover {
+    text-decoration: underline;
+}
+
 
 /* Accommodation */
 .accommodation {
@@ -520,10 +513,6 @@ footer p {
         font-size: 2rem;
     }
 
-    .details-grid .detail-card {
-        flex: 0 0 100%;
-        min-width: auto;
-    }
 
     .accommodation-grid .accommodation-card {
         flex: 0 0 100%;
@@ -537,6 +526,15 @@ footer p {
 
     section {
         padding: 60px 0;
+    }
+
+    .story-content {
+        padding: 30px 20px;
+    }
+
+    .story-content .address-section {
+        padding: 20px 15px;
+        margin-top: 25px;
     }
 }
 
