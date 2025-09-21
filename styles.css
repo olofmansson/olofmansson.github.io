@@ -119,12 +119,12 @@ section {
     color: #6B8E5A;
 }
 
-/* Our Story */
-.story {
+/* Ceremony */
+.ceremony {
     background: white;
 }
 
-.story-content {
+.ceremony-content {
     max-width: 800px;
     margin: 0 auto;
     text-align: left;
@@ -134,21 +134,21 @@ section {
     box-shadow: 0 5px 15px rgba(107, 142, 90, 0.05);
 }
 
-.story-content p {
+.ceremony-content p {
     font-size: 1.1rem;
     line-height: 1.8;
     margin-bottom: 25px;
     color: #555;
 }
 
-.story-content p strong {
+.ceremony-content p strong {
     color: #6B8E5A;
     font-weight: 600;
     display: inline-block;
     margin-right: 8px;
 }
 
-.story-content p i {
+.ceremony-content p i {
     display: block;
     text-align: center;
     margin-top: 40px;
@@ -158,7 +158,7 @@ section {
     color: #6B8E5A;
 }
 
-.story-content .address-section {
+.ceremony-content .address-section {
     background: rgba(255, 255, 255, 0.8);
     border: 1px solid #E5E7EB;
     border-radius: 8px;
@@ -167,7 +167,7 @@ section {
     text-align: center;
 }
 
-.story-content .address-section h4 {
+.ceremony-content .address-section h4 {
     font-family: 'Playfair Display', serif;
     font-size: 1.3rem;
     color: #6B8E5A;
@@ -175,27 +175,39 @@ section {
     font-weight: 400;
 }
 
-.story-content .address-section p {
+.ceremony-content .address-section p {
     margin-bottom: 10px;
     color: #666;
 }
 
-.story-content .address-section a {
+.ceremony-content .address-section a {
     color: #6B8E5A;
     text-decoration: none;
 }
 
-.story-content .address-section a:hover {
+.ceremony-content .address-section a:hover {
     text-decoration: underline;
 }
 
+.ceremony-content a {
+    color: #6B8E5A;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
 
-/* Accommodation */
-.accommodation {
+.ceremony-content a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+
+/* Transfer */
+.transfer {
     background: #F8F9FA;
 }
 
-.accommodation-grid {
+.transfer-grid {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -213,7 +225,7 @@ section {
     margin: 0 auto -30px auto;
 }
 
-.accommodation-grid .accommodation-card {
+.transfer-grid .transfer-card {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 calc(50% - 60px);
     flex: 0 0 calc(50% - 60px);
@@ -221,7 +233,7 @@ section {
     margin: 0 15px 30px 15px;
 }
 
-.accommodation-card {
+.transfer-card {
     background: white;
     padding: 40px 30px;
     border-radius: 10px;
@@ -229,12 +241,12 @@ section {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.accommodation-card:hover {
+.transfer-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 40px rgba(107, 142, 90, 0.1);
 }
 
-.accommodation-card h3 {
+.transfer-card h3 {
     font-family: 'Playfair Display', serif;
     font-size: 1.8rem;
     color: #6B8E5A;
@@ -242,7 +254,7 @@ section {
     text-align: center;
 }
 
-.accommodation-card p {
+.transfer-card p {
     margin-bottom: 15px;
     color: #666;
     line-height: 1.7;
@@ -269,7 +281,7 @@ section {
     text-decoration: underline;
 }
 
-.accommodation-card em {
+.transfer-card em {
     color: #888;
     font-style: italic;
     margin-top: 15px;
@@ -316,32 +328,32 @@ section {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-/* Registry */
-.registry {
+/* Gifts */
+.gifts {
     background: white;
 }
 
-.registry-content {
+.gifts-content {
     max-width: 700px;
     margin: 0 auto;
     text-align: center;
 }
 
-.registry p {
+.gifts p {
     font-size: 1.1rem;
     line-height: 1.8;
     margin-bottom: 40px;
     color: #555;
 }
 
-.registry-links {
+.gifts-links {
     display: flex;
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
 }
 
-.registry-link {
+.gifts-link {
     display: inline-block;
     background: #6B8E5A;
     color: white;
@@ -352,7 +364,7 @@ section {
     transition: all 0.3s ease;
 }
 
-.registry-link:hover {
+.gifts-link:hover {
     background: #5A7A4A;
     transform: translateY(-2px);
 }
@@ -514,7 +526,7 @@ footer p {
     }
 
 
-    .accommodation-grid .accommodation-card {
+    .transfer-grid .transfer-card {
         flex: 0 0 100%;
         min-width: auto;
     }
@@ -528,11 +540,11 @@ footer p {
         padding: 60px 0;
     }
 
-    .story-content {
+    .ceremony-content {
         padding: 30px 20px;
     }
 
-    .story-content .address-section {
+    .ceremony-content .address-section {
         padding: 20px 15px;
         margin-top: 25px;
     }
